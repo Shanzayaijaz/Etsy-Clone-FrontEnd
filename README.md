@@ -1,5 +1,6 @@
 # Etsy-Clone-FrontEnd
 This is a responsive Etsy clone website built with HTML and CSS. The project includes:
+
 -> A homepage with product listings and categories
 
 -> A sign-up form page
@@ -7,6 +8,7 @@ This is a responsive Etsy clone website built with HTML and CSS. The project inc
 -> A thank you page after form submission
 
  Features
+ 
 -> Responsive header with search bar, navigation links, and categories.
 
 -> Promotional sections and product listings with ratings and discounts.
@@ -20,6 +22,7 @@ This is a responsive Etsy clone website built with HTML and CSS. The project inc
 -> Font Awesome integration for star ratings and icons.
 
 How to Run
+
 -> Clone or download this repository.
 
 -> Open index.html in a web browser.
