@@ -132,17 +132,17 @@ footer{
 }
 .nav2 {
   background-color: #f7f7f7;
-  padding: 10px 20px;
+  padding: 10px 0;
   border-bottom: 1px solid #ddd;
+  text-align: center;
 }
 
 .secondary-nav {
-  display: flex;
+  display: inline-flex;
   gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow-x: auto;
 }
 
 .secondary-nav li a {
