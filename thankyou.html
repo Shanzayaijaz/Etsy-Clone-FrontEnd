@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    body {
-      background-color: skyblue;
-      font-size: larger;
-      font-weight: bolder;
-    }
-  </style>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thank You</title>
+    <title>Thank You – Etsy Clone</title>
+    <style>
+      body {
+        background-color: #f7f1ee;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .box {
+        background-color: white;
+        padding: 30px 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .box p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .back-link {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: #f1641e;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+      .back-link:hover {
+        background-color: #d4551a;
+      }
+    </style>
   </head>
   <body>
-    <p>Your response has been recorded! Thank You</p>
-    <button><a href="doc.html">Back to homepage </a></button>
+    <div class="box">
+      <p>You're signed in! Thank you.</p>
+      <a class="back-link" href="doc.html">Back to Homepage</a>
+    </div>
   </body>
 </html>
