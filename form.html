@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Feedback form</title>
+    <title>Sign In – Etsy Clone</title>
+    <style>
+      body {
+        background-color: #f7f1ee;
+        font-family: Arial, sans-serif;
+      }
+      form {
+        width: 300px;
+        margin: 20vh auto 0 auto;
+        padding: 30px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+      }
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #f1641e;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #d4551a;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      background-color: skyblue;
-    }
-    form {
-      width: 300px;
-      margin: 20vh auto 0 auto;
-      padding: 20px;
-      background-color: whitesmoke;
-      border-radius: 4px;
-      font-size: 16px;
-    }
-  </style>
   <body>
     <form action="thankyou.html">
-      <label for="first name">First Name:</label>
-      <input type="text" id="fname" required /><br /><br />
+      <h2>Sign In</h2>
 
-      <label for="last name">Last Name</label>
-      <input type="text" id="lname" required /><br /><br />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
 
-      <script>
-        var firstname = document.getElementById("fname");
-        var lastname = document.getElementById("lname");
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
 
-        firstname.addEventListener("input", validateInput);
-        lastname.addEventListener("input", validateInput);
-
-        function validateInput(event) {
-          var inputv = event.target.value;
-          if (/^[a-zA-Z]*$/.test(inputv)) {
-            event.target.setCustomValidity("");
-          } else {
-            event.target.setCustomValidity(
-              "Please enter only alphabetic characters."
-            );
-          }
-        }
-      </script>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" required /><br /><br />
-
-      <label for="contact">Contact</label>
-      <input type="number" id="contact" required value="number" /><br /><br />
-
-      <label for="feedback">Feedback</label>
-      <textarea id="feedback" name="feedback" rows="1" cols="30"></textarea
-      ><br /><br />
-
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Sign In" />
     </form>
   </body>
 </html>
