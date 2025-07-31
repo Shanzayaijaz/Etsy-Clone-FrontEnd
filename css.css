@@ -130,11 +130,36 @@ footer{
 .hr{
     color: lightgray;
 }
-.nav2{
-    text-align: center;
-    margin-top: -40px;
-    font-weight: bolder;
+.nav2 {
+  background-color: #f7f7f7;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
 }
+
+.secondary-nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+}
+
+.secondary-nav li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: 16px;
+  transition: background-color 0.2s;
+}
+
+.secondary-nav li a:hover {
+  background-color: #e7e7e7;
+}
+
 
 .logos {
     display: flex;
